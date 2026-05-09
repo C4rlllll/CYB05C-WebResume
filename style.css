@@ -1,0 +1,190 @@
+ @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: #f4f3ef;
+    color: #1a1a1a;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+
+  /* HEADER */
+  .header {
+    background: #1a1a2e;
+    color: #fff;
+    padding: 28px 40px 22px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 4px solid #c8a96e;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  .header-photo {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    border: 3px solid #c8a96e;
+    flex-shrink: 0;
+    overflow: hidden;
+    background: #2e2e4a;
+  }
+
+  .header-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .header-text { flex: 1; }
+
+  .header-name {
+    font-family: 'EB Garamond', serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #fff;
+  }
+
+  .header-role {
+    font-size: 13px;
+    color: #c8a96e;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+
+  .header-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  .contact-item svg { flex-shrink: 0; }
+
+  /* BODY LAYOUT */
+  .body-wrap {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    max-width: 960px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+  }
+
+  .left-col {
+    padding: 28px 30px;
+    border-right: 1px solid #e0ddd6;
+  }
+
+  .right-col {
+    padding: 28px 22px;
+    background: #faf9f6;
+  }
+
+  .sec { margin-bottom: 24px; }
+
+  .sec-title {
+    font-family: 'EB Garamond', serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #1a1a2e;
+    border-bottom: 2px solid #1a1a2e;
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+  }
+
+  .profile-text {
+    font-size: 13px;
+    line-height: 1.75;
+    color: #2a2a2a;
+    text-align: justify;
+  }
+
+  .entry { margin-bottom: 14px; }
+
+  .entry-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 2px;
+  }
+
+  .entry-org {
+    font-weight: 600;
+    font-size: 13px;
+    color: #1a1a2e;
+  }
+
+  .entry-year {
+    font-size: 12px;
+    color: #777;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .entry-role {
+    font-weight: 600;
+    font-size: 13px;
+    color: #1a1a2e;
+    display: block;
+  }
+
+  .bullet-list {
+    list-style: none;
+    padding-left: 12px;
+    margin-top: 4px;
+  }
+  .bullet-list li {
+    position: relative;
+    padding-left: 14px;
+    font-size: 12.5px;
+    color: #333;
+    margin-bottom: 3px;
+  }
+  .bullet-list li::before {
+    content: '▪';
+    position: absolute;
+    left: 0;
+    color: #1a1a2e;
+    font-size: 10px;
+    top: 2px;
+  }
+
+  .divider { border: none; border-top: 1px solid #e0ddd6; margin: 14px 0; }
+
+  .edu-sub { padding-left: 14px; font-size: 12.5px; color: #444; margin-top: 3px; }
+  .edu-sub-indent { padding-left: 28px; font-size: 12.5px; color: #444; margin-top: 2px; }
+
+  .seminar-entry { margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px dashed #e0ddd6; }
+  .seminar-entry:last-child { border-bottom: none; }
+  .seminar-title { font-weight: 600; font-size: 13px; color: #1a1a2e; }
+  .seminar-meta { font-size: 12px; color: #666; margin-top: 2px; }
+
+  .rc-item { font-size: 12.5px; color: #2a2a2a; padding: 2px 0 2px 16px; position: relative; }
+  .rc-item::before { content: '•'; position: absolute; left: 4px; color: #1a1a2e; }
+
+  .cert-sub { padding-left: 24px; font-size: 12px; color: #555; position: relative; }
+  .cert-sub::before { content: '○'; position: absolute; left: 12px; font-size: 10px; color: #888; top: 1px; }
+
+  @media print {
+    body { background: #fff; }
+    .body-wrap { box-shadow: none; }
+  }
